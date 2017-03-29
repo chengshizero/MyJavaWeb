@@ -7,6 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="0">
   
+  
     <%
  String rand = (String)session.getAttribute("rand");
  String input = request.getParameter("insrand");
@@ -22,15 +23,4 @@
     <font color=red>輸入不同，認證失敗！</font>
   <%
     }
-  %> 
-<%
-    String nn=request.getParameter("acct");
-    String pp=request.getParameter("pass");
-    
-    
-    if(nn.equalsIgnoreCase("qwert") && pp.equals("ABCD1234")){
-        response.sendRedirect("../MM.jsp");
-    } else {
-      response.sendRedirect("LoginFail.html");
-    }
-%> 
+  %>

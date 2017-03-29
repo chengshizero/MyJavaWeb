@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>資料資料資料資料資料</title>
+        <title>SqlserverTest</title>
     </head>
     <body>
        <h1>請輸入資料：</h1>

@@ -15,6 +15,13 @@
             <td style="padding: 10px;"><input type="password" name="pass" placeholder="請輸入密碼" required="required" /></td>
         </tr>
         <tr>
+            <td style="text-align: right;font-weight: bold;padding: 10px;">系統產生的認證碼：</td>
+            <td style="padding: 10px;">
+                <img src="tools/newImage.jsp" alt="New Image"/>
+                <input type="text" name="insrand" maxlength="4"/>
+            </td>
+        </tr>
+        <tr>
             <td colspan="2" style="text-align: center;padding: 10px;">
                 <input type="submit" value="送出">&nbsp;&nbsp;
                 <input type="reset" value="重置">

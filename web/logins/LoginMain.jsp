@@ -13,7 +13,7 @@
     </head>
     <body>
         <div style="width: 400px; margin-left: auto; margin-right: auto;">
-        <form action="ValidLoginProcess.jsp" method="post">
+        <form action="logins/ValidLoginProcess.jsp" method="post">
             <%@include file="../tools/LoginPanel.jsp" %>
         </form>        
         <p>&nbsp;</p>
