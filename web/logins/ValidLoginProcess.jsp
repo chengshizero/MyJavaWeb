@@ -7,28 +7,14 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="0">
   
-    <%
- String rand = (String)session.getAttribute("rand");
- String input = request.getParameter("insrand");
-%>
-<br>
-  <%
-    if (rand.equals(input)) {
-  %>
-    <font color=green>輸入相同，認證成功！</font>
-  <%
-    } else {
-  %>
-    <font color=red>輸入不同，認證失敗！</font>
-  <%
-    }
-  %> 
+ 
 <%
+    String rand = (String)session.getAttribute("rand");
     String nn=request.getParameter("acct");
     String pp=request.getParameter("pass");
+    String input = request.getParameter("insrand");
     
-    
-    if(nn.equalsIgnoreCase("qwert") && pp.equals("ABCD1234")){
+    if(nn.equalsIgnoreCase("qwert") && pp.equals("ABCD1234")&&rand.equals(input)){
         response.sendRedirect("../MM.jsp");
     } else {
       response.sendRedirect("LoginFail.html");
