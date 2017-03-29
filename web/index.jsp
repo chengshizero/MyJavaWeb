@@ -10,12 +10,11 @@
         <title>Java首頁</title>
     </head>
     <body>
-        <h1>我的第一個Java網站!</h1>
+        <h1>第一個Java網站!</h1>
         
         <p>&nbsp;</p>
-
-        <%@include  file="HH.jsp" %>        
-        <%@include  file="MM.jsp" %>        
+        <%@include  file="logins/LoginMain.jsp" %>   
+        <%@include  file="HH.jsp" %>     "  
         <%@include  file="tools/PageFooter_Info.jsp" %>        
     </body>
 </html>
